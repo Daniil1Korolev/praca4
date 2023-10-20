@@ -1,0 +1,9 @@
+FROM adoptopenjdk/openjdk11:alpine
+
+LABEL version = "1.0.1"
+
+WORKDIR /gametest/java
+
+COPY . /gametest/java/
+
+CMD ["java", "game.java"]
